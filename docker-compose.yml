@@ -1,4 +1,4 @@
-#zf251102.0825
+#zf251102.0911
 
 #volumes:
 #  n8n_storage:
@@ -47,7 +47,7 @@ x-init-ollama: &init-ollama
     - OLLAMA_HOST=ollama:11434
   command:
     - "-c"
-    - "sleep 3; ollama pull llama3.2"
+    - "sleep 3; ollama pull llama3.2 ; ollama pull qwen3:4b-instruct-2507-q4_K_M ; ollama pull qwen3:0.6b-q4_K_M"
 
 services:
   postgres:

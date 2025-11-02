@@ -1,3 +1,9 @@
+ollama_storage/
+postgres_storage/
+qdrant_storage/
+n8n_storage/
+
+
 # Logs
 logs
 *.log
